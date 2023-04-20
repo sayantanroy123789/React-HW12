@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import React,{useState,useEffect} from 'react'
 import './App.css';
+import Header from './Components/Header';
 const Card=()=>{
   
   const [fake,setFake]=useState([]);
@@ -19,6 +20,7 @@ const Card=()=>{
   
   return(
       <>
+      <Header />
       <div className="container">
         {fake.map((values)=>{
           return(
